@@ -8,11 +8,12 @@ jobs:
   github_deets:
 
     runs-on: ubuntu-latest
-
+    env:
+      GITHUB_CONTEXT: ${{ toJson(github) }}
     steps:
     - name: Run a one-line script
       run: echo Hello, world!
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
-        echo Committed By: ${{ toJson(github) }}
+        echo Context "$GITHUB_CONTEXT"
