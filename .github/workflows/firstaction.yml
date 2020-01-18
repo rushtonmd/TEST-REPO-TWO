@@ -15,4 +15,4 @@ jobs:
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
-        echo Committed By: ${{ github }}
+        echo Committed By: ${{ toJson(github) }}
