@@ -16,4 +16,4 @@ jobs:
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
-        echo "$GITHUB_CONTEXT.actor"
+        echo ${{ github.event.project_cart.content_url }}
