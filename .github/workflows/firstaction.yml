@@ -15,4 +15,4 @@ jobs:
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
-        echo Committed By: ${{ github.events.commit[0].author.name }}
+        echo Committed By: ${{ github.actor }}
